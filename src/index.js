@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 app.enable("trust proxy");
 
 app.get("/", (req, res) => {
-  res.status(200).send(`${new Date().getTime()}`);
+  res.status(200).send(`Welcome to node-demo-server ${new Date().getTime()}`);
 });
 
 app.listen(port, () => {
